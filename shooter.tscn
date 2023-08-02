@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://l6go8dh0ys0w"]
+
+[ext_resource type="Script" path="res://shooter.gd" id="1_d6euc"]
+[ext_resource type="PackedScene" uid="uid://c77xoxvatrqt3" path="res://bullet.tscn" id="2_pe63r"]
+[ext_resource type="Texture2D" uid="uid://djmaldsynxms8" path="res://icon.svg" id="3_4dffo"]
+
+[node name="Shooter" type="Node2D"]
+script = ExtResource("1_d6euc")
+bullet = ExtResource("2_pe63r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_4dffo")
