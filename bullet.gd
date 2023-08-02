@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-var initiator
+var direction:Vector2
 
 func _physics_process(delta):
-	apply_force(initiator.force)
+	apply_force(direction)
