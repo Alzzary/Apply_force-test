@@ -17,8 +17,8 @@ func _physics_process(delta):
 		
 		#also don't forget to check your sprites rotations, as they are all rotated 90° if you use Vector2.UP as initial vector
 		
-	if Input.is_action_pressed("right"):
-		rotation -= 0.05
 	if Input.is_action_pressed("left"):
+		rotation -= 0.05
+	if Input.is_action_pressed("right"):
 		rotation += 0.05
 	
